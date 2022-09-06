@@ -18,12 +18,19 @@
         <form method="post" action="./validate.php">
             <img class="mb-4" src="./assets/huevo.jpeg" alt="" width="80" height="80">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-            <!-- <?php if (isset($_GET["msg"]) && $_GET["msg"] === "errorLogin") { ?>
-                <div class="mt-2 mb-1 alert alert-danger alert-dismissible fade show" role="alert">
+
+            
+            <?php 
+            if (isset($_GET["msg"]) && $_GET["msg"] === "errorLogin") { 
+            ?>
+            
+            <div class="mt-2 mb-1 alert alert-danger alert-dismissible fade show" role="alert">
                     Las credenciales que has introduccido son incorrectas. Inténtelo de nuevo 😉
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            <?php } ?> -->
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <?php } ?> 
+        
+
 
             <div class="form-floating">
                 <input type="email" name="user" class="form-control" placeholder="name@example.com">
@@ -37,7 +44,7 @@
             <input class="w-100 btn btn-lg btn-primary" type="submit" value="Login">
 
 
-            <p class="mt-2 mb-1 text-muted">&copy; 2017–2022</p>
+            <p class="mt-2 mb-1 text-muted">&copy; 2022</p>
 
         </form>
     </main>
